@@ -2,6 +2,9 @@
 <html>
 	<head>
 		<style type="text/css">
+			.outside_div{
+				<!--border-style: dashed;-->
+			}
 			table.center {
 				margin-left:auto; 
 				margin-right:auto;
@@ -33,28 +36,36 @@
 			}
 			.sunlight_chart{
 				float: right;
-				width: 700px;
-				padding-right: 75px;
+				width: 650px;
+				height: 425px;
+				margin-right: 50px;
 			}
 			.plant_growth_methods{
 				float: left;
 				width: 600px;
 				padding-left: 100px;
-				max-height: 350px;
-				overflow: auto;
 			}
 			.plant_growth_methods_actual{
 				padding-left: 25px;
-			}
-			.life_cycle{
-				float: right;
-				width: 600px;
-				padding-right: 100px;
+				padding-right: 50px;
 				max-height: 350px;
 				overflow: auto;
 			}
+			.life_cycle{
+				float: right;
+				width: 650px;
+				margin-right: 50px;
+				padding-right: 100px;
+				
+			}
 			.life_cycle_actual{
 				padding-left: 25px;
+				max-height: 350px;
+				overflow: auto;
+			}
+			.space{
+				width: 100%;
+				height: 200px;
 			}
 		</style>
 		
@@ -112,7 +123,7 @@
 		<br>
 		<br>
 		<br>
-		<div class="observations_total">
+		<div class="observations_total outside_div">
 			<!-- documentations and what not -->
 			<h2 id="title_header">Daily Observations</h2>
 			<br>
@@ -245,7 +256,7 @@
 				<p  class="daily_observations">Place Holder</p>
 			</div>
 		</div>
-		<div class="sunlight_chart">
+		<div class="sunlight_chart outside_div">
 			<h2 id="title_header">When Bean Nye Received Sunlight / Water</h2>
 			<br>
 			<div id="tableContainer" class="tableContainer">
@@ -540,17 +551,49 @@
 				</table>
 			</div>
 		</div>
-		
-		<div class="plant_growth_methods">
-			<br>
-			<br>
+		<!-- space between the two -->
+		<div>
+			<br><br><br><br><br><br><br><br><br><br>
+			<div class="outside_div space">
+			
+			</div>
+			<br><br>
+		</div>
+		<div class="plant_growth_methods outside_div">
 			<h2 id="title_header">How Bean Nye Was Grown</h2>
 			<br>
 			<div class="plant_growth_methods_actual">
-				<p>Here is how the plants were grown.</p>
+				<h4>Germination:</h4>
+				<p>Following careful research, I found that the best way to germinate my bean seed was through the "Ziploc Method". 
+					The plan called for the bean(s) to be put inside a damp paper towel then placed inside a Ziploc for two to three 
+					days. Following this process the seeds germinated in no time.</p>
+					
+				<h3>-----Time To Grow-----</h3><br>
+				
+				<h4>Soil:</h4><p>Regular Potting Soil</p><br>
+				<h4>Container:</h4><p>Large pot followed by five small pots</p><br>
+				<h4>Location:</h4><p>Outside then under a lamp</p><br>
+				
+				<h4>Why?</h4>
+				<p>I originally chose to put it outside because I thought 
+					the natural sunlight would be beneficial for the plant. 
+					When there was no growth, I figured it was because of
+					competition for resources so I put all five beans in 
+					separate pots. I though I had solved the problem. When 
+					there was still no growth I moved one bean plant inside 
+					and put it under a lamp for 24  hours. I ignored the rest 
+					of the beans and put my sole focus into this one bean. 
+					I worked hard to keep this bean watered and under the lamp. 
+					The bean started to grow faster than I thought it could. 
+					Over just one day, the bean must have grown upwards of three 
+					centimeters. I could not believe it. By the time the last bean check-
+					before the final-came around, this bean was at 42 centimeters. I thought 
+					it could never get there. Sadly, after that bean check the top of Bean 
+					Nye died so I was forced to remove it. It has slightly grown back but 
+					not quite back to 42cm. My best measurements place it at 40cm.</p>
 			</div>
 		</div>
-		<div class="life_cycle">
+		<div class="life_cycle outside_div">
 			<h2 id="title_header">Life Cycle of Bean Nye</h2>
 			<br>
 			<div class="life_cycle_actual">
@@ -559,10 +602,8 @@
 		</div>
 		<!-- nothing below here -->
 		<div>
-			<br><br><br><br><br><br>
-			<br><br><br><br><br><br>
-			<br><br><br><br><br><br>
-			<br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br>
 			<p id="copyright">Copyright © 2018 · All Rights Reserved · Anthony Migyanka</p>
 		</div>
 	</body>
@@ -570,13 +611,6 @@
 <!-- 
 Documentation page
 -----------------------------
-Accurately documents the life cycle of your bean plant
-Meets the criteria of all of the following statements 
-	Why you chose to put your plant where you did.
-	Soil or soil substitute.
-	Seed germination explanation
 Detailed storytelling of the life cycle of your bean plant
-Document Daily the observations and self-pics of you and your plant.
-Explanation of how you grew your bean and why (soil, container, fertilizer, etc). 
 
 -->
