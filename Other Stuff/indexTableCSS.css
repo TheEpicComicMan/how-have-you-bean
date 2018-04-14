@@ -7,27 +7,13 @@ clear: both;
 height: 400px;
 overflow: auto;
 width: 1000px;
-margin-left: 50px;
+padding-right: 100px;
 }
-
-/* Reset overflow value to hidden for all non-IE browsers. */
-html>body div.tableContainer {
-overflow: hidden;
-width: 1000px;
-}
-
 /* define width of table. IE browsers only                 */
 div.tableContainer table {
 float: left;
 width: 1000px;
 }
-
-/* define width of table. Add 16px to width for scrollbar.           */
-/* All other non-IE browsers.                                        */
-html>body div.tableContainer table {
-width: 1000px;
-}
-
 /* set table header to a fixed position. WinIE 6.x only                                       */
 /* In WinIE 6.x, any element with a position property set to relative and is a child of       */
 /* an element that has an overflow property set, the relative value translates into fixed.    */
@@ -50,7 +36,7 @@ html>body tbody.scrollContent {
 display: block;
 height: 300px;
 overflow: auto;
-width: 100%
+width: 600px;
 }
 
 
@@ -61,82 +47,32 @@ width: 100%
 
 /* number */
 html>body thead.fixedHeader th {
-width: 233px;
+width: 150px;
 }
-
 /* date */
 html>body thead.fixedHeader th + th {
-width: 260px;
+width: 150px;
 }
-
-/* title */
-html>body thead.fixedHeader th + th + th {
-width: 340px;
+html>body thead.fixedHeader th + th + th{
+width: 150px;
 }
-
-/* link */
-html>body thead.fixedHeader th + th + th + th {
-width: 290px;
+html>body thead.fixedHeader th + th + th + th{
+width: 150px;
 }
-
-/* download */
-html>body thead.fixedHeader th + th + th + th + th {
-width: 325px;
-}
-
 
 /* define width of TD elements: 1st, 2nd, and 3rd respectively.          */
 
 /* All other non-IE browsers.                                            */
 /* http://www.w3.org/TR/REC-CSS2/selector.html#adjacent-selectors        */
-html>body tbody.scrollContent td {
-width: 400px
+html>body tbody.scrollContent td{
+width: 175px
 }
-
-html>body tbody.scrollContent td + td {
-width: 400px
+html>body tbody.scrollContent td + td{
+width: 175px
 }
-
-html>body tbody.scrollContent td + td + td {
-width: 400px
+html>body tbody.scrollContent td + td + td{
+width: 175px
 }
-
-
-/* My Origional CSSS */
-
-table.center {
-margin-left:auto; 
-margin-right:auto;
-}
-h1{
-text-align: center;
-text-decoration: underline;
-}
-a:link.use, a:visited.use {
-background-color: white;
-color: black;
-border: 2px solid #696969;
-padding: 10px 20px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-}
-a:hover.use, a:active.use {
-background-color: #c1c1c1;
-}
-#current{
-color: black;
-}
-body{
-background-attachment: fixed;
-width:100%; 
-height:auto;
-}
-.css-serial {
-counter-reset: serial-number;
-}
-
-.css-serial td:first-child:before {
-counter-increment: serial-number; 
-content: counter(serial-number); 
+html>body tbody.scrollContent td + td + td + td{
+width: 159px
 }
