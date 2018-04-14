@@ -6,22 +6,6 @@
 				margin-left:auto; 
 				margin-right:auto;
 			}
-			h1{
-				text-align: center;
-				text-decoration: underline;
-			}
-			a:link.use, a:visited.use {
-    				background-color: white;
-    				color: black;
-    				border: 2px solid #696969;
-    				padding: 10px 20px;
-    				text-align: center;
-    				text-decoration: none;
-    				display: inline-block;
-			}
-			a:hover.use, a:active.use {
-   				background-color: #c1c1c1;
-			}
 			body{
 				background-attachment: fixed;
 				width:100%; 
@@ -29,6 +13,8 @@
 			}
 			.observations{
 				padding-left: 100px;
+				max-height: 400px;
+				overflow: auto;
 			}
 			.daily_observations{
 				padding-left: 25px;
@@ -38,8 +24,21 @@
 			}
 			#copyright{
 				text-align: center;
+				float: center;
 				
 			}
+			.observations_total{
+				float: left;
+				width: 600px;
+			}
+			.sunlight_chart{
+				float: right;
+				width: 600px;
+			}
+			.sunlight_chart_actual{
+				padding_right: 50px;
+			}
+			
 		</style>
 		
 		<title>How Have You Bean</title>
@@ -52,6 +51,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 		<script src="https://use.fontawesome.com/d00cdf32e7.js"></script>
+		<script src="../Other Stuff/indexTableJS.js"></script>
+		<link rel="stylesheet" href="../Other Stuff/indexTableCSS.css">
 	</head>
 	<body style="color:white" background="https://images.alphacoders.com/204/204873.jpg">
 		<nav id="controlnav" class="mx-auto navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
@@ -94,136 +95,165 @@
 		<br>
 		<br>
 		<br>
-		<!-- documentations and what not -->
-		<h2 id="title_header">Daily Observations</h2>
-		<div class="observations">
-			<br>
-			<p>Date: 3.1.18</p>
-			<p class="daily_observations">Today the beans arrived home. The first thing to do is to soak them. I let the beans soak in warm water for around 24 hours. They are to be pulled out tomorrow.</p>
-			<br>
-			<p>Date: 3.2.18</p>
-			<p  class="daily_observations">The beans were taken out of the water. They were taken out of the water and placed on a damp paper towel in a Ziploc bag.</p>
-			<br>
-			<p>Date: 3.3.18</p>
-			<p  class="daily_observations">Nothing much to report today, they were in the Ziploc bag for the entire day.</p>
-			<br>
-			<p>Date: 3.4.18</p>
-			<p  class="daily_observations">Nothing much to report today, they were in the Ziploc bag for the entire day.</p>
-			<br>
-			<p>Date: 3.5.18</p>
-			<p  class="daily_observations">Today is the day the beans get removed from the bag. Having germinated, they were planted about one inch deep in potting soil.</p>
-			<br>
-			<p>Date: 3.6.18</p>
-			<p  class="daily_observations">Today the beans were watered and placed out in the sun. I think I over-watered them as the pot looks like a swamp. </p>
-			<br>
-			<p>Date: 3.7.18</p>
-			<p  class="daily_observations">The beans are left out overnight and I have seen no growth since yesterday, not that I expected any.</p>
-			<br>
-			<p>Date: 3.8.18</p>
-			<p  class="daily_observations">No growth and the pot still is soaked in water even hough I have not re-watered the plans. </p>
-			<br>
-			<p>Date: 3.9.18</p>
-			<p  class="daily_observations"> I got a new pot for the plants today. In fact, a new pot for each bean. I feel they will grow much better now that they do not have to fight for resources. </p>
-			<br>
-			<p>Date: 3.10.18</p>
-			<p  class="daily_observations">Still no growth from any of the beans, I'm starting to get worried. I think soon I will move them inside and give one constant light and water.</p>
-			<br>
-			<p>Date: 3.11.18</p>
-			<p  class="daily_observations">More water and sun today, still no growth.</p>
-			<br>
-			<p>Date: 3.12.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.13.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.14.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.15.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.16.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.17.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.18.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.19.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.20.18</p>
-			<p  class="daily_observations">Today I finally got tired of no growth in any of the beans. I moved one pot into the house and put a lamp over it for all 24 hours.</p>
-			<br>
-			<p>Date: 3.21.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.22.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.23.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.24.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.25.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.26.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.27.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.28.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.29.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 3.30.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 4.1.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 4.2.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 4.3.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 4.4.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 4.5.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 4.6.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 4.7.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 4.8.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 4.9.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 4.10.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 4.11.18</p>
-			<p  class="daily_observations">Place Holder</p>
-			<br>
-			<p>Date: 4.12.18</p>
-			<p  class="daily_observations">Place Holder</p>
+		<div class="observations_total">
+			<!-- documentations and what not -->
+			<h2 id="title_header">Daily Observations</h2>
+			<div class="observations">
+				<br>
+				<p>Date: 3.1.18</p>
+				<p class="daily_observations">Today the beans arrived home. The first thing to do is to soak them. I let the beans soak in warm water for around 24 hours. They are to be pulled out tomorrow.</p>
+				<br>
+				<p>Date: 3.2.18</p>
+				<p  class="daily_observations">The beans were taken out of the water. They were taken out of the water and placed on a damp paper towel in a Ziploc bag.</p>
+				<br>
+				<p>Date: 3.3.18</p>
+				<p  class="daily_observations">Nothing much to report today, they were in the Ziploc bag for the entire day.</p>
+				<br>
+				<p>Date: 3.4.18</p>
+				<p  class="daily_observations">Nothing much to report today, they were in the Ziploc bag for the entire day.</p>
+				<br>
+				<p>Date: 3.5.18</p>
+				<p  class="daily_observations">Today is the day the beans get removed from the bag. Having germinated, they were planted about one inch deep in potting soil.</p>
+				<br>
+				<p>Date: 3.6.18</p>
+				<p  class="daily_observations">Today the beans were watered and placed out in the sun. I think I over-watered them as the pot looks like a swamp. </p>
+				<br>
+				<p>Date: 3.7.18</p>
+				<p  class="daily_observations">The beans are left out overnight and I have seen no growth since yesterday, not that I expected any.</p>
+				<br>
+				<p>Date: 3.8.18</p>
+				<p  class="daily_observations">No growth and the pot still is soaked in water even hough I have not re-watered the plans. </p>
+				<br>
+				<p>Date: 3.9.18</p>
+				<p  class="daily_observations"> I got a new pot for the plants today. In fact, a new pot for each bean. I feel they will grow much better now that they do not have to fight for resources. </p>
+				<br>
+				<p>Date: 3.10.18</p>
+				<p  class="daily_observations">Still no growth from any of the beans, I'm starting to get worried. I think soon I will move them inside and give one constant light and water.</p>
+				<br>
+				<p>Date: 3.11.18</p>
+				<p  class="daily_observations">More water and sun today, still no growth.</p>
+				<br>
+				<p>Date: 3.12.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.13.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.14.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.15.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.16.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.17.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.18.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.19.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.20.18</p>
+				<p  class="daily_observations">Today I finally got tired of no growth in any of the beans. I moved one pot into the house and put a lamp over it for all 24 hours.</p>
+				<br>
+				<p>Date: 3.21.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.22.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.23.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.24.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.25.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.26.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.27.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.28.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.29.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 3.30.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 4.1.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 4.2.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 4.3.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 4.4.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 4.5.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 4.6.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 4.7.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 4.8.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 4.9.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 4.10.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 4.11.18</p>
+				<p  class="daily_observations">Place Holder</p>
+				<br>
+				<p>Date: 4.12.18</p>
+				<p  class="daily_observations">Place Holder</p>
+			</div>
 		</div>
+		<div class="sunlight_chart">
+			<h2>When Bean Nye Received Sunlight</h2>
+			<div class="sunlight_chart_actual">
+				<div id="tableContainer" class="tableContainer">
+					<table class="table table-striped mx-auto table table-hover scrollTable">
+						<thead class="fixedHeader">
+							<tr> 
+								<th style="text-align: center">Date</th>
+								<th style="text-align: center">Hours of Sun</th>
+							</tr>
+						</thead>
+						<tbody class="scrollContent">
+							<tr>
+								<td>3.1.18</td>
+								<td>24</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 		<br>
 		<br>
 		<p id="copyright">Copyright © 2018 · All Rights Reserved · Anthony Migyanka</p>
